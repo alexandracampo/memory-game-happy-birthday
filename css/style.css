@@ -137,10 +137,6 @@ h1 span:nth-child(14) {
 }
 
 
-
-
-
-
 .text-under-title {
     text-align: center;
     margin: 5rem;
@@ -152,14 +148,14 @@ h1 span:nth-child(14) {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: auto;
+
 }
 
 .card {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
+    margin: .5rem;
     background-color: gray;
-    margin: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,5 +178,9 @@ h1 span:nth-child(14) {
 
     .text-under-title {
         font-size: 2rem;
+    }
+
+    .card {
+        margin: 1rem;
     }
 }
