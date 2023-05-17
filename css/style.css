@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.text-under-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 10rem;
+    height: 10rem;
+    background-color: gray;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 8px 7px 8px 0px rgba(0, 0, 0, 0.66);
+}
