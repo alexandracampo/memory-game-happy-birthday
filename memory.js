@@ -1,6 +1,6 @@
 // Define variables
 //let cardValues = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-let cardValues = ['./images/foto1.jpeg', './images/foto2.jpeg', './images/foto3.jpeg', './images/foto4.jpeg', './images/foto5.jpeg', './images/foto6.jpeg', './images/foto7.jpg', './images/foto8.png', './images/foto9.jpeg', './images/foto10.jpeg', './images/foto11.jpeg', './images/foto12.jpeg', './images/foto14.jpeg'];
+let cardValues = ['./images/foto1.jpeg', './images/foto2.jpeg', './images/foto3.jpeg', './images/foto4.jpeg', './images/foto5.jpeg', './images/foto6.jpeg', './images/foto7.jpg', './images/foto8_.png', './images/foto9.jpeg', './images/foto10.jpeg', './images/foto11.jpeg', './images/foto12.jpeg', './images/foto14.jpeg'];
 
 let cards = [];
 let flippedCards = [];
@@ -50,7 +50,7 @@ function checkMatch() {
     });
     flippedCards = [];
     if (matchedCards.length === cards.length) {
-      alert('¡Has ganado! Feliz cumpleaños, ¡TE QUEREMOS!');
+      //alert('¡Has ganado! Feliz cumpleaños, ¡TE QUEREMOS!');
 
       const defaults = {
         spread: 360,
