@@ -6,14 +6,6 @@
 
 }
 
-.audio {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1rem;
-    width: 16rem;
-}
-
 .container {
     text-align: center;
     margin: 2rem;
@@ -140,7 +132,7 @@ h1 span:nth-child(14) {
 
 .text-under-title {
     text-align: center;
-    margin: 5rem;
+    margin: 3rem;
     font-size: 1rem;
 }
 
@@ -153,9 +145,9 @@ h1 span:nth-child(14) {
 }
 
 .card {
-    width: 11rem;
-    height: 11rem;
-    margin: .2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
     background-color: gray;
     display: flex;
     justify-content: center;
@@ -167,23 +159,37 @@ h1 span:nth-child(14) {
     box-shadow: 8px 7px 8px 0px rgba(0, 0, 0, 0.66);
 }
 
-@media screen and (min-width: 768px) {
 
-    .game {
-        margin: 5rem;
-    }
+@media screen and (min-width: 500px) and (max-width: 768px) {
 
     h1 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .text-under-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .card {
         margin: 1rem;
-        width: 14rem;
-        height: 14rem;
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .text-under-title {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        margin: 1rem;
+        width: 8rem;
+        height: 8rem;
     }
 }

@@ -14,8 +14,7 @@ for (let i = 0; i < cardValues.length; i++) {
     card.classList.add('card');
     card.dataset.value = cardValues[i];
     card.setAttribute('src', './images/interrogante.jpg');
-    //card.setAttribute('src', cardValues[i])
-    //card.textContent = '?';
+
     cards.push(card);
   }
 }
@@ -50,8 +49,8 @@ function checkMatch() {
     });
     flippedCards = [];
     if (matchedCards.length === cards.length) {
-      //alert('¡Has ganado! Feliz cumpleaños, ¡TE QUEREMOS!');
 
+      //Efecto confeti:
       const defaults = {
         spread: 360,
         ticks: 1000,
@@ -64,7 +63,7 @@ function checkMatch() {
 
       confetti({
         ...defaults,
-        particleCount: 1000,
+        particleCount: 3000,
         scalar: 2,
       });
 
