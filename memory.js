@@ -63,21 +63,22 @@ function checkMatch() {
 
       confetti({
         ...defaults,
-        particleCount: 800,
+        particleCount: 50,
         scalar: 2,
       });
 
       confetti({
         ...defaults,
-        particleCount: 500,
+        particleCount: 25,
         scalar: 3,
       });
 
       confetti({
         ...defaults,
-        particleCount: 100,
+        particleCount: 10,
         scalar: 4,
       });
+
     }
   } else {
     flippedCards.forEach(card => card.setAttribute('src', './images/interrogante.jpg'));
