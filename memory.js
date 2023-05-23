@@ -63,7 +63,7 @@ function checkMatch() {
 
       confetti({
         ...defaults,
-        particleCount: 3000,
+        particleCount: 800,
         scalar: 2,
       });
 
