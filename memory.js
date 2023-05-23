@@ -53,7 +53,7 @@ function checkMatch() {
       //Efecto confeti:
       const defaults = {
         spread: 360,
-        ticks: 1000,
+        ticks: 100,
         gravity: 0,
         decay: 0.94,
         startVelocity: 30,
