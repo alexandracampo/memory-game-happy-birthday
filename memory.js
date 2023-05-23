@@ -40,6 +40,16 @@ function flipCard() {
   }
 }
 
+//Función efecto confeti:
+function generateConfetti() {
+  confetti({
+    particleCount: 800, // Ajusta el número de confetis generados
+    spread: 360,
+    origin: { y: 0.6 },
+    colors: ['#FFC0CB', '#FF69B4', '#FF1493', '#C71585'],
+  });
+}
+
 // Definimos la función que verifica el match de las tarjetas:
 function checkMatch() {
   if (flippedCards[0].dataset.value === flippedCards[1].dataset.value) {
@@ -50,38 +60,14 @@ function checkMatch() {
     flippedCards = [];
     if (matchedCards.length === cards.length) {
 
-      //Efecto confeti:
-      const defaults = {
-        spread: 360,
-        ticks: 100,
-        gravity: 0,
-        decay: 0.94,
-        startVelocity: 30,
-        shapes: ["heart"],
-        colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
-      };
-
-      confetti({
-        ...defaults,
-        particleCount: 50,
-        scalar: 2,
-      });
-
-      confetti({
-        ...defaults,
-        particleCount: 25,
-        scalar: 3,
-      });
-
-      confetti({
-        ...defaults,
-        particleCount: 10,
-        scalar: 4,
-      });
+      generateConfetti();
 
     }
+
   } else {
     flippedCards.forEach(card => card.setAttribute('src', './images/interrogante.jpg'));
     flippedCards = [];
   }
 }
+
+
