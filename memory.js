@@ -1,22 +1,28 @@
 // Define variables
-//let cardValues = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 let cardValues = ['./images/foto1.jpeg', './images/foto2.jpeg', './images/foto3.jpeg', './images/foto4.jpeg', './images/foto5.jpeg', './images/foto6.jpeg', './images/foto7.jpg', './images/foto8_.png', './images/foto9.jpeg', './images/foto10.jpeg', './images/foto11.jpeg', './images/foto12.jpeg', './images/foto14.jpeg'];
 
 let cards = [];
 let flippedCards = [];
 let matchedCards = [];
 
+
+// create a method to generate a card:
+const cardGenerator = (cardValue) => {
+  const card = document.createElement('img');
+
+  card.classList.add('card');
+  card.dataset.value = cardValue;
+  card.setAttribute('src', './images/interrogante.jpg');
+
+  return card;
+};
+
 // Creamos tablero de juego:
 const game = document.querySelector('.game');
 for (let i = 0; i < cardValues.length; i++) {
-  for (let j = 0; j < 2; j++) {
-    const card = document.createElement('img');
-    card.classList.add('card');
-    card.dataset.value = cardValues[i];
-    card.setAttribute('src', './images/interrogante.jpg');
-
-    cards.push(card);
-  }
+  //You call the new method twice, so you don't need a for statement for that
+  cards.push(cardGenerator(cardValues[i]));
+  cards.push(cardGenerator(cardValues[i]));
 }
 
 // Barajar cartas:
@@ -31,7 +37,6 @@ cards.forEach(card => {
 // Definimos la función de voltear la tarjeta:
 function flipCard() {
   if (flippedCards.length < 2 && !flippedCards.includes(this) && !matchedCards.includes(this)) {
-    //this.textContent = this.dataset.value;
     this.setAttribute('src', this.dataset.value);
     flippedCards.push(this);
     if (flippedCards.length === 2) {
